@@ -1,0 +1,48 @@
+html{
+	font-family:Century Gothic;}
+
+.nav ul{
+	height:100px;
+	margin-right:0;
+	list-style-type:none;}
+
+.nav li{
+
+	float:left;}
+
+
+.navbar a{
+	display:block;
+	width:200px;
+	height:60px;
+
+	font-size:20px;
+	color:black;
+	margin-top:20px;
+	text-align:right;
+	text-decoration:none;}
+
+
+h1{font-style:bold;}
+
+h2{font-style:bold;}
+
+.orderslist{
+	position:absolute;
+	right:0;
+	top:200px;}
+
+.orderslist table{
+
+	width:1200px;
+	border-left:1px solid black;
+	border-top:1px solid black;}
+
+.orderslist table thead{
+	height:50px;
+	background-color:#EAEAEA;}
+
+.orderslist table td{
+	width:200px;
+	border-right:1px solid black;
+	border-bottom:1px solid black;}
