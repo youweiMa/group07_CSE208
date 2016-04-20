@@ -6,30 +6,34 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>G07 Laundry Expert | Make Order</title>
+        <title>G07 Laundry Expert | Wash</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css_makeorder.css">
+        <link rel="stylesheet" type="text/css" href="customer.css">
     </head>
     <body>
-        <nav>
-        <div class="navbar">
-            <a href="homepage.html"><img src="jpg/brand.jpg" alt="brand" id="brand"></a>
-            <ul>
-                <li><a href="makeorder.html">Make Order</a></li>
-                <li><a href="myorders.html">My Orders</a></li>
-                <li><a href="comments.html">Comments</a></li>
-                <li id="user"><a href="usercenter.html">*User*</a></li>
-            </ul>
-
+        <div class="navbar_container">
+            <div class="brand">
+                <a href="homepage.html"><img src="jpg/brand.jpg" alt="brand"></a>
+            </div>            
+            <div class="navbar">            
+                <ul>
+                    <li><a href="wash.html">Wash</a></li>                    
+                    <li><a href="myorders.html">My Orders</a></li>
+                    <li><a href="comments.html">Comments</a></li>                                                    
+                </ul>
+            </div>
+            <div class="user">
+                <ul>
+                    <li><a href="usercenter.html">Sign In</a></li>
+                </ul>
+            </div>
         </div>
-        </nav>
-        <!--navigation bar-->
-        <section>
-        <div class="map"><a href="homepage.html">Home page</a>&gt Make Order</div>
+        <!--navigation bar-->        
+        <div class="map"><a href="homepage.html">Home page</a>&gt <a href="wash.html">Wash</a></div>
         <!--map-->
-        <h3>Choose clothing:</h3>
         <div class="cloth">
+        <h3>Choose clothing:</h3>        
         <table cellspacing="50">
             <tr>
                 <td>
@@ -111,7 +115,7 @@ and open the template in the editor.
             </table>
         </div>
         <!--shopping cart-->
-        </section>
+        
         <div class="footer">
             <hr>
             <p>Posted by: Group 07<br>Contact us: 0512-0000000</p>
