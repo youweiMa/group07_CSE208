@@ -103,10 +103,80 @@ and open the template in the editor.
                 </button>
             </a>    
         </section>
-        <div class="introduction">
-            <h2>How Laundry Expert Works?</h2>
-            <img src="slide/flow.png" alt="how it works"/>
+        <div class="intro_container">
+            <div class="introduction">
+            <h1>How Laundry Expert Works?</h1>
+            <h2>(move the mouse above icon to see details!)</h2>
+            <div id="txtbox1">
+                <p id="txt1">Make An Order</p>
+                <span>
+                    Selecting laundry items and check the time, then our deliveryman will be on his way to meet you!
+                </span>
+            </div>
+            <canvas id="arrow1"></canvas>
+            <script>
+                var c=document.getElementById("arrow1");
+                var ctx=c.getContext("2d");
+                ctx.beginPath();
+                ctx.moveTo(60,0);
+                ctx.lineTo(100,40);
+                ctx.lineTo(60,80);
+                ctx.closePath();
+                ctx.fillStyle="#0099ff";
+                ctx.fill();
+                ctx.fillRect(0,20,60,40);
+            </script>
+            <div id="txtbox2">
+                <p id="txt2">Pick Up</p>
+                <span>
+                    Deliveryman will come to you and pick up your clothes. Your clothes are ready for traveling.
+                </span>
+            </div>
+            <canvas id="arrow2"></canvas>
+            <script>
+                var c=document.getElementById("arrow2");
+                var ctx=c.getContext("2d");
+                ctx.beginPath();
+                ctx.moveTo(60,0);
+                ctx.lineTo(100,40);
+                ctx.lineTo(60,80);
+                ctx.closePath();
+                ctx.fillStyle="#0099ff";
+                ctx.fill();
+                ctx.fillRect(0,20,60,40);
+            </script>
+            <div id="txtbox3">
+                <p id="txt3">Clean</p>
+                <span>
+                    The process of washing, drying, and packing will last within 2 days.
+                </span>
+            </div>
+            <canvas id="arrow3"></canvas>
+            <script>
+                var c=document.getElementById("arrow3");
+                var ctx=c.getContext("2d");
+                ctx.beginPath();
+                ctx.moveTo(60,0);
+                ctx.lineTo(100,40);
+                ctx.lineTo(60,80);
+                ctx.closePath();
+                ctx.fillStyle="#0099ff";
+                ctx.fill();
+                ctx.fillRect(0,20,60,40);
+            </script>
+            <div id="txtbox4">
+                <p id="txt4">Delivery</p>
+                <span>
+                    Just waiting when your clothes are on their way back. Confirming after receiving them and paying some bills to deliveryman!
+                </span>
+            </div>
+            </div>
         </div>
         </center>
+    <!--footer-->
+    <div class="footer">
+            <hr>
+            <p>Posted by: Group 07<br>Contact us: 0512-0000000</p>
+    </div>
     </body>
 </html>

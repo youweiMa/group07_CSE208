@@ -12,6 +12,7 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="customer.css">
     </head>
     <body>
+        <!--navigation bar--> 
         <div class="navbar_container">
             <div class="brand">
                 <a href="home.html"><img src="cloth/brand.jpg" alt="brand"/></a>
@@ -29,56 +30,46 @@ and open the template in the editor.
                 </ul>
             </div>
         </div>
-        <!--navigation bar-->        
+        <!--map-->      
         <div class="map"><a href="home.html">Home page</a>&gt <a href="myorders.html">My Orders</a></div>
-        <!--map-->
-        <h1>Orders</h1>
-        <hr>
-        <br>
-        <br>
-	<div class="orderslist">
-        <br>
-        <br>
-	<h2>Outstanding Orders</h2>
-	<table>
-            <thead>
-                <tr>
-                    <td>Order Number</td>
-                    <td>Order Date</td>
-                    <td>Items</td>
-                    <td>Order Status</td>
-                    <td>Cost</td>
-                    <td>Operation</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td colspan="6">You currently have no outstanding orders.</td>
-                </tr>
-            </tbody>
-	</table>
-	<br>
-	<br>
-	<br>
-	<br>
-	<h2>Previous Orders</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <td>Order Number</td>
-                        <td>Order Date</td>
-                        <td>Items</td>
-                        <td>Order Status</td>
-                        <td>Cost</td>
-                        <td>Operation</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="6">You have no historic orders.</td>
-                    </tr>
-                </tbody>
+        <!--orders table-->
+        <div class="ordertable_container">
+            <p class="title">Order Lists</p>
+            <table class="orders-table">
+		<tr>
+		<td class="orders-left">
+			<h2>Orders</h2>
+			<p>Review your recent orders</p>
+			<button>Order History</button>
+		</td>
+		<td class="orders-right">
+			<h2>Outstanding Orders</h2>
+			<hr/>
+			<table class="orders-right-table">
+				<thead>
+                		<tr>
+                    		<td>Order Number</td>
+                    		<td>Order Date</td>
+                    		<td>Items</td>
+                    		<td>Order Status</td>
+                    		<td>Cost</td>
+                    		<td>Operation</td>
+                		</tr>
+            			</thead>
+            			<tbody>
+                		<tr>
+                    		<td colspan="6">You currently have no outstanding orders.</td>
+                		</tr>
+            			</tbody>
+			</table>
+		</td>
+		</tr>
             </table>
-	</div>
+        </div>
+        <!--footer-->
+    <div class="footer">
+            <hr>
+            <p>Posted by: Group 07<br>Contact us: 0512-0000000</p>
+    </div>
     </body>
 </html>
