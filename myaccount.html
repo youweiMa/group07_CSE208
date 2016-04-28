@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>G07 Laundry Expert | My Orders</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="customer.css">
+    </head>
+    <body>
+        <div class="navbar_container">
+            <div class="brand">
+                <a href="home.html"><img src="cloth/brand.jpg" alt="brand"/></a>
+            </div>            
+            <div class="navbar">            
+                <ul>
+                    <li><a href="wash.html">Wash</a></li>                    
+                    <li><a href="myorders.html">My Orders</a></li>
+                    <li><a href="comments.html">Comments</a></li>                                                    
+                </ul>
+            </div>
+            <div class="user">
+                <ul>
+                    <li><a href="signin.html">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--navigation bar-->        
+        <div class="map"><a href="home.html">Home page </a>&gt <a href="myorders.html">My Orders</a></div>
+        <!--map-->
+
+	<div class="orders">
+	<table class="orders-table">
+		<tr>
+		<td class="orders-left">
+			<h2>Orders</h2>
+			<p>Review your recent orders</p>
+			<button>Order History</button>
+		</td>
+		<td class="orders-right">
+			<h2>Outstanding Orders</h2>
+			<hr/>
+			<table class="orders-right-table">
+				<thead>
+                		<tr>
+                    		<td>Order Number</td>
+                    		<td>Order Date</td>
+                    		<td>Items</td>
+                    		<td>Order Status</td>
+                    		<td>Cost</td>
+                    		<td>Operation</td>
+                		</tr>
+            			</thead>
+            			<tbody>
+                		<tr>
+                    		<td colspan="6">You currently have no outstanding orders.</td>
+                		</tr>
+            			</tbody>
+			</table>
+		</td>
+		</tr>
+	</table>
+	</div>
+
+	<div class="settings">
+	<table class="settings-table">
+		<tr>
+		<td class="settings-left">
+			<h2>Settings</h2>
+			<p>Update your account settings</p>
+			<button>Settings</button>
+		</td>
+		<td class="settings-right">
+			<h2>My Personal Profile</h2>
+			<hr/>
+			<p>Name: name<br/>
+			   Phone Number: phonenumber<br/>
+			   Delivery Address: address<br/>
+			   Email Address: email</p>
+		</td>
+		</tr>
+	</table>
+	</div>
+    </body>
+</html>
