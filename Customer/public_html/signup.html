@@ -23,29 +23,27 @@ and open the template in the editor.
         <div class="register_container">
             <section id="content">
                 <form name="Register" action="">
-                    <h1><a href="signin.html">Login</a>
-                    <span>|</span>
-                    <a href="signup.html">Register</a></h1>
+                    <p class="register">Register</p>
                     <div>
-                        <table>
-                            <tr align="center">
-                                <td>User Name:</td>
+                        <table class="content" cellpadding="8">
+                            <tr>
+                                <td align="right">User Name</td>
                                 <td><input name="cusName" type="text" size="50" placeholder="6-20 characters" maxlength="20" required="required" id="cusname"></td>
                             </tr>
-                            <tr align="center">
-                                <td>Password:</td>
+                            <tr>
+                                <td align="right">Password</td>
                                 <td><input name="cusPWD" type="password" size="50" placeholder="6-15 characters" maxlength="15" required="required" id="cuspwd1"></td>
                             </tr>
-                            <tr align="center">
-                                <td>Confirm Password:</td>
+                            <tr>
+                                <td align="right">Confirm Password</td>
                                 <td><input name="cusPWD" type="password" size="50" placeholder="6-15 characters" maxlength="15" required="required" id="cuspwd2"></td>
                             </tr>
-                            <tr align="center">
-                                <td>Phone Number:</td>
+                            <tr>
+                                <td align="right">Phone Number</td>
                                 <td><input name="cusPhone" type="text" size="50" placeholder="please input your phone number" maxlength="12" required="required" id="cusphone"></td>
                             </tr>
-                            <tr align="center">
-                                <td>E-mail Address:</td>
+                            <tr>
+                                <td align="right">E-mail Address</td>
                                 <td><input name="email" type="text" size="50" placeholder="please input your E-mail address" maxlength="50" required="required" id="email"></td>
                             </tr>                           
                         </table>
@@ -54,7 +52,7 @@ and open the template in the editor.
                 </form>
             </section>
             <!-- content -->
-            <p>Already registered?<a href="signin.html">Sign In</a> right now</p>
+            <p>Already registered?<a class="jump" href="signin.html"> Sign In</a> right now</p>
         </div>
         <!-- container -->
         </div>

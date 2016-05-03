@@ -23,18 +23,20 @@ and open the template in the editor.
             <div class="login_container">
                 <section id="content">
                     <form name="Login" action="">
-                        <h1><a href="signin.html">Login</a>
-                        <span>|</span>
-                        <a href="signup.html">Register</a></h1>
+                            <p class="login">Login</p>
                         <div>
-                            <table>
+                            <table class="content" cellpadding="8">
                                 <tr align=center>
-                                    <td>User Name:</td>
-                                    <td><input name="cusName" type="text" size="50" placeholder="Account name" maxlength="20" required="required" id="cusname"/></td>
+                                    <td>User Name</td>
+                                    <td>
+                                        <input name="cusName" type="text" size="50" placeholder="Account name" maxlength="20" required="required" id="cusname"/>
+                                    </td>
                                 </tr>
                                 <tr align=center>
-                                    <td>Password:</td>
-                                    <td><input name="cusPWD" type="password" size="50" placeholder="Password" maxlength="15" required="required" id="cuspwd"/></td>
+                                    <td>Password</td>
+                                    <td>
+                                        <input name="cusPWD" type="password" size="50" placeholder="Password" maxlength="15" required="required" id="cuspwd"/>
+                                    </td>
                                 </tr>
                             </table>
                         </div>
@@ -44,7 +46,7 @@ and open the template in the editor.
                     </form>
                 </section>
                 <!-- content -->
-                <p>New users? <a href="signup.html">Sign Up</a></p>
+                <p>New users? <a class="jump" href="signup.html">Sign Up</a></p>
             </div>
             <!-- container -->
             </div>

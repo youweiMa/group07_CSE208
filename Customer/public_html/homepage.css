@@ -67,18 +67,14 @@ body {
 }
 
 /*homepage layout*/
-#rt-showcase-surround{
+center{
     background: -moz-linear-gradient(#EAEAEA, #ffffff);
     background: linear-gradient(#EAEAEA, #ffffff);
-    height: 500px;
     margin:auto -8px auto -8px;
 }
 #rt-showcase{
     position: relative;
     bottom:-30px;
-}
-.introduction{
-    margin-top:50px;
 }
 /*button with animation
 refer to:http://www.runoob.com/css3/css3-buttons.html*/
@@ -1375,11 +1371,13 @@ only screen and (                max-resolution: 2dppx)  and (max-width: 480px) 
 /*introduction column*/
 .intro_container{
     background-color: #FFFFFF;
-    height:600px;
     margin:0;
+    width:800px;
+    border-radius: 20px;
 }
 .introduction{
-    margin-top:150px;
+    margin-top:120px;
+    margin-bottom: 120px;
 }
 #txtbox1,#txtbox2,#txtbox3,#txtbox4{
     width:200px;
@@ -1388,20 +1386,23 @@ only screen and (                max-resolution: 2dppx)  and (max-width: 480px) 
     color: #FFFFFF;
     border:1px;
     border-radius: 20px;
-    display:inline-block;
+    display:block;
+    margin-bottom: -30px;
 }
 #txt1,#txt2,#txt3,#txt4{
     text-align: center;
-    line-height: 150px;
+    line-height: 200px;
     font-size: 25px;
 }
 #arrow1,#arrow2,#arrow3{
     width: 65px;
     height: 80px;
-    display:inline-block;
+    display:block;
     position:relative;
     top: 50px;
-    left:25px;
+    right: 20px;
+    transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
 }
 #txtbox1 span{
     display:none;
@@ -1410,13 +1411,15 @@ only screen and (                max-resolution: 2dppx)  and (max-width: 480px) 
     z-index: 2;
 }
 #txtbox1:hover span{
-    display: block;
-    position: absolute;
-    width:200px;
+    display: inline-block;
+    position: relative;
+    left: 220px;
+    bottom: 220px;
+    height:200px;
     background-color: #FFFFFF;
     color: #0e8cd6;
     font-size: 20px;
-    margin-top: 10px;
+    text-align: left;
     z-index: 1;
 }
 #txtbox2 span{
@@ -1427,12 +1430,14 @@ only screen and (                max-resolution: 2dppx)  and (max-width: 480px) 
 }
 #txtbox2:hover span{
     display: block;
-    position: absolute;
-    width:200px;
+    position: relative;
+    left: 220px;
+    bottom: 200px;
+    height:200px;
     background-color: #FFFFFF;
     color: #0e8cd6;
     font-size: 20px;
-    margin-top: 10px;
+    text-align: left;
     z-index: 1;
 }
 #txtbox3 span{
@@ -1443,12 +1448,14 @@ only screen and (                max-resolution: 2dppx)  and (max-width: 480px) 
 }
 #txtbox3:hover span{
     display: block;
-    position: absolute;
-    width:200px;
+    position: relative;
+    left: 220px;
+    bottom: 180px;
+    height:200px;
     background-color: #FFFFFF;
     color: #0e8cd6;
     font-size: 20px;
-    margin-top: 10px;
+    text-align: left;
     z-index: 1;
 }
 #txtbox4 span{
@@ -1459,11 +1466,63 @@ only screen and (                max-resolution: 2dppx)  and (max-width: 480px) 
 }
 #txtbox4:hover span{
     display: block;
-    position: absolute;
-    width:200px;
+    position: relative;
+    left: 220px;
+    bottom: 220px;
+    height:200px;
     background-color: #FFFFFF;
     color: #0e8cd6;
     font-size: 20px;
-    margin-top:10px;
+    text-align: left;
     z-index: 1;
+}
+/*price list column*/
+.price_list{
+    width:800px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+.price_list_head{
+    display: block;
+}
+.price_list_left{
+    display: inline-block;
+    width: 350px;
+}
+.price_list_right{
+    display: inline-block;
+    width:370px;
+}
+.price_intro{
+    position:relative;
+    bottom: 150px;
+}
+.price_intro p{
+    font-size:25px;
+    color: #0e8cd6;
+    text-align: center;
+}
+.price_details{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.price_details table{
+    background-color: #EAEAEA;
+    font-size: 22px;
+    font-family:"Trebuchet MS";
+    border: 1px #0e8cd6;
+}
+.price_details td{
+    line-height: 1.5em;
+    padding: 8px;
+    border:1px #0e8cd6;
+}
+#price_table_head{
+    color: #FFFFFF;
+    font-size: 25px;
+    background-color: #0e8cd6;
+    line-height: 1.5em;
+}
+.price_details table tr#alt td{
+    background-color: #FFFFFF;
 }

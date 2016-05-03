@@ -87,6 +87,9 @@ body {
     border-radius: 20px;
     position: relative;
     top: 30px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color: #0e00a0;
 }
 .cloth_table{
     border: 0px;
@@ -511,7 +514,7 @@ body {
     top: 30px;
     border-bottom-style: solid;
     border-right-style: solid;
-    border-color: #0e8cd6;
+    border-color: #0e00a0;
 }
 .comment_username, .comment_time, .comment_score{
     color: #999999;
@@ -531,10 +534,28 @@ body {
 
 /*sign in and sign up*/
 .background{
-    height:600px;
+    height:800px;
     background: -moz-linear-gradient(#0e8cd6,#FFFFFF);
     background: linear-gradient(#0e8cd6,#FFFFFF);
     margin:5px -8px auto -8px;
+}
+.login,.register{
+    font-family:  "Lato", "Lucida Grande", "Lucida", "Verdana", "Arial", "sans-serif";
+    line-height: 1.25em;
+    text-decoration: none;
+    font-size: 25px;
+    color: #0e8cd6;
+}
+.content td{
+    white-space: nowrap;
+    font-family:  "Lato", "Lucida Grande", "Lucida", "Verdana", "Arial", "sans-serif";
+}
+.content input{
+    width:200px;
+    height:25px;
+    background-color: #EAEAEA;
+    border-style: inset;
+    border-radius: 8px;
 }
 .login_container,.register_container{
     width: 500px;
@@ -542,7 +563,8 @@ body {
     padding: 20px;
     position: relative;
     top:120px;
-    border-style: outset;
+    border-right-style: solid;
+    border-bottom-style: solid;
     border-color: #0e00a0;
     border-radius: 20px;
 }
@@ -560,12 +582,19 @@ body {
     border-radius: 5px;
     box-shadow: 0 4px #888888;
 }
-.s_button:hover {background-color: #0e00a0}
+.s_button:hover {
+    background-color: #0e00a0;
+}
 
 .s_button:active {
   background-color: #0e00a0;
   box-shadow: 0 1px #999999;
   transform: translateY(2px);
+}
+.jump{
+    color:#0e8cd6;
+    line-height: 1.25em;
+    text-decoration: none;
 }
 
 
