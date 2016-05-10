@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>G07 Laundry Expert | Delivery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="manager.css">
+    </head>
+    <body>
+	    <!--navigation bar-->  
+        <div class="navbar_container">
+            <div class="brand">
+                <a href="home.html"><img src="cloth/brand.jpg" alt="brand"/></a>
+            </div>            
+            <div class="navbar">            
+                <ul>                  
+                    <li><a href="deliveryman_wenxing_pickup.html">PICK UP &amp DELIVERY</a></li>                                                  
+                </ul>
+            </div>
+            <div class="user">
+                <ul>
+                    <li><a href="signin.html">Sign Out</a></li>
+                </ul>
+            </div>
+        </div>
+
+		<!--map-->
+        <div class="map">
+			<a href="deliveryman_wenxing_pickup.html">Pick Up &amp Delivery</a>
+		</div>
+		
+		<!--Chose An Area-->
+		<div class="areas">
+			<a href="deliveryman_wenxing_delivery.html">Wenxing </a>| <a class="areas selected" href="deliveryman_wenhui_delivery.html">Wenhui </a>| <a href="deliveryman_wencui_delivery.html">Wencui</a>
+		</div>
+		
+		<!--Show orders-->
+		<div class="manager_order_bigcontainer">
+			<table class="manager_order_bigtable">
+				<tr>
+				<td class="manager_order_bigtable_lefttd">
+					<h2>Orders</h2>
+					<ul>
+					<li><a class="status" href="deliveryman_wenhui_pickup.html">Pickup</a></li>
+					<li><a class="status selected" href="deliveryman_wenhui_delivery.html">Delivery</a></li>
+					<li><a class="status" href="deliveryman_wenhui_finished.html">Finished Orders</a></li>
+					</ul>
+				</td>
+				<td class="manager_order_bigtable_righttd">
+					<h2>Wenhui Plaza · Delivery Orders</h2>
+					<hr/>
+					<table class="manager_order_smalltable">
+						<thead>
+						<tr>
+							<td>No.</td>
+							<td>Order ID</td>
+                    		<td>Order Date</td>
+                    		<td>Items</td>
+                    		<td>Cost</td>
+                    		<td>Order Status</td>
+                    		<td>Operation</td>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>编号</td>
+							<td>订单ID</td>
+							<td>下单时间</td>
+							<td>数量</td>
+							<td>订单价格</td>
+							<td>订单状态</td>
+							<td><button>See Details</button></td>
+						</tr>
+						</tbody>
+					</table>
+				</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
