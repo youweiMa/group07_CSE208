@@ -1,0 +1,216 @@
+/*deliveryman_common_layout head*/
+body {
+    background-color: #ffffff;
+}
+.navbar_container{
+    display: flex;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+}
+.navbar_container ul{
+    list-style-type: none;
+}
+.navbar_container li{
+    margin:0 auto;
+    float:left;
+    text-align: center;
+    font-family: "Lato", "Lucida Grande", "Lucida", "Verdana", "Arial", "sans-serif";
+}
+.navbar_container a{
+    color:#0e8cd6;
+    line-height: 1.25em;
+    text-decoration: none;
+    display:inline-block;
+}
+.navbar_container a:hover{
+    color:#0e00a0;
+}
+.brand{
+    display:inline-block;
+}
+.navbar{
+    display:inline-block;
+}
+.navbar a{    
+    width:auto;
+    margin-left:50px;
+    text-transform: uppercase;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.navbar a:hover{
+    background-color: whitesmoke;
+}
+.user{
+    display:inline-block;
+    margin-right:20px;
+}
+.user a{
+    padding-top: 1em;
+}
+.map{
+    padding-left:30px;
+    display: block;
+    background-color: #0e8cd6;
+    color: #ffffff;
+    margin:5px -8px auto -8px;
+}
+.map a{
+    color: #ffffff;
+    font-family: "Helvetica Neue", "Helvetica",  "Arial", "sans-serif";
+    line-height: 1.7em;
+    text-decoration: none;
+}
+.map a:hover{
+    text-decoration: underline;
+}
+
+/*deliveryman order management*/
+.delivery_order_bigcontainer{
+    background-color:#EAEAEA;
+    border:1px solid #EAEAEA;
+    border-radius: 20px;
+    font-family: "Malgun Gothic", "Arial";
+    display: block;
+    margin-top:30px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-bottom:30px;
+}
+.areas{
+    display: flex;
+    justify-content: center;
+    -moz-justify-content: center;
+}
+.areas a{
+    font-family: "Malgun Gothic", "Arial";
+    font-size:25px;
+    text-decoration:none;
+    color: #000000;
+    border:none;
+    margin-right: 15px;
+    margin-bottom:-2px;
+    line-height: 35px;
+    padding:5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.areas a:hover{
+	color: #0e8cd6;
+}
+.areas.selected{
+	color: #0e00a0;
+        background-color: #FFFFFF;
+        height: 35px;
+}
+h2{
+    font-size: 35px;
+}
+.delivery_order_bigtable{
+    display: flex;
+    justify-content: center;
+    -moz-justify-content: center;
+}
+.delivery_order_bigtable_lefttd{
+    text-align:center;
+    width:250px;
+}
+
+.delivery_order_bigtable_lefttd ul{
+    list-style-type:none;
+}
+.delivery_order_bigtable_lefttd li{
+    margin-top:15px;
+    margin-right: -3px;
+    background-color: #FFFFFF;
+}
+.delivery_order_bigtable_lefttd li:hover{
+    background-color: #0e8cd6;
+}
+.status {
+	font-size:23px;
+	font-family:"Malgun Gothic", "Arial";
+	text-align:center;
+	text-decoration:none;
+	color: #000000;
+}
+.status:hover{
+    color: #FFFFFF;
+}
+.status.selected{
+    color: #0e00a0;
+}
+.delivery_order_bigtable_righttd{
+	background-color:white;
+	border-radius:20px;
+	text-align:left;
+	vertical-align:top;
+        width:750px;
+}
+.delivery_order_smalltable{
+    margin-top:30px;
+    margin-left:30px;
+    border: 0;
+    text-align:center;
+    width:700px;
+    background-color: #EAEAEA;
+}
+.delivery_order_smalltable thead{
+    background-color: #0e8cd6;
+    color: #FFFFFF;
+}
+/*sign in*/
+.login{
+    font-family:  "Lato", "Lucida Grande", "Lucida", "Verdana", "Arial", "sans-serif";
+    line-height: 1.25em;
+    text-decoration: none;
+    font-size: 25px;
+    color: #0e8cd6;
+    display:flex;
+    justify-content:center;
+}
+.content{
+    display:flex;
+    justify-content:center;
+}
+.content td{
+    white-space: nowrap;
+    font-family:  "Lato", "Lucida Grande", "Lucida", "Verdana", "Arial", "sans-serif";
+}
+.content input{
+    width:200px;
+    height:25px;
+    background-color: #EAEAEA;
+    border-style: inset;
+}
+.login_container{
+    margin: 30px auto 30px auto;
+    width: 500px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-style: solid;
+    border-color: #0e00a0;
+}
+.s_button{
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 15px;
+    text-align: center;   
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    background-color: #0e8cd6;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px #888888;
+}
+.s_button:hover {
+    background-color: #0e00a0;
+}
+.s_button:active {
+  background-color: #0e00a0;
+  box-shadow: 0 1px #999999;
+  transform: translateY(2px);
+}
