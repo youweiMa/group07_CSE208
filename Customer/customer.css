@@ -421,127 +421,14 @@ body {
     margin-top:auto;
     margin-bottom:auto;
 }
-.cart_button:hover {background-color: #0e00a0}
+.cart_button:hover {
+    background-color: #0e00a0;
+}
 
 .cart_button:active {
   background-color: #0e00a0;
   box-shadow: 0 1px #999999;
   transform: translateY(2px);
-}
-
-/*Confirm Window*/
-.confirm_window{
-	position:fixed;
-	margin-left:30%;
-	top:0;
-	width:50%;
-	height:80%;
-	background-color:white;
-	border:15px #B0E0E6 groove;
-	border-radius:20px;
-	font-family:"Lato", "Lucida Grande", "Lucida", "Verdana", "Arial", "sans-serif";
-}
-.confirm_window table{
-	width:80%;
-	margin-top:5%;
-	margin-left:10%;
-}
-.confirm_window tr{
-	background-color: #EAEAEA;
-	text-align:center;
-}
-.confirm_window td{
-	border:none;
-}
-
-.address p{
-	margin-left:10%;
-	margin-top:6%;
-}
-.selections{
-	margin-top:5%;
-}
-.area{
-	margin-left:15%;
-}
-.building{
-	margin-left:15%;
-}
-.room{
-	margin-top:2%;
-	width:70%;
-	margin-left:15%;
-}
-.input{
-
-}
-.phone_no{
-	margin-top:4%;
-	width:70%;
-	margin-left:15%;
-}
-.window_bottom{
-
-	font-size:17px;
-	color:black;
-	width:100%;
-	height:10%;
-	position:absolute;
-	bottom:0px;
-	background-color:#B4CDCD;
-}
-.bottom_span{
-	margin-left:5%;
-}
-.window_button_return{
-	position:absolute;
-	right:25%;
-}
-.window_button_return button{
-	outline: none;
-	height:30px;
-	width:100px;
-    color: white;
-	font-size:15px;
-	font-weight:900;
-    background-color: #27408B;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 4px #888888;
-}
-.window_button_return button:hover{
-	background-color:#36648B;
-}
-.window_button_return button:active {
-	background-color:#36648B;
-	box-shadow: 0 1px #999999;
-	transform: translateY(2px);
-	color:#27408B;
-}
-.window_button_confirm {
-	position:absolute;
-	right:2%;
-}
-.window_button_confirm button{
-	outline: none;
-	height:30px;
-	width:100px;
-    color: white;
-	font-size:15px;
-	font-weight:900;
-    background-color: #27408B;
-    border: none;
-    border-radius: 2px;
-    box-shadow: 0 4px #888888;
-}
-.window_button_confirm button:hover{
-	background-color:#36648B;
-}
-.window_button_confirm button:active {
-	background-color:#36648B;
-	box-shadow: 0 1px #999999;
-	transform: translateY(2px);
-	color:#27408B;
 }
 
 /*customer_myorders*/

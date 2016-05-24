@@ -213,106 +213,11 @@ and open the template in the editor.
             </div>
             <div class="cart_foot">
                 <p>Total $: 45</p>
-                <button class="cart_button" onclick='document.getElementById("confirm_window_visible").style.display="block";document.getElementById("cart_visible").style.display="none"' style="vertical-align:middle">
+                <button class="cart_button" style="vertical-align:middle">
                     <span>Confirm</span>
                 </button> 
             </div>
         </div>
-		
-
-		<!--Confirm Window-->
-		<div class="confirm_window" id="confirm_window_visible" style="display:none">
-			<table>
-				<tr style="background-color:white">
-					<th></th><th>Unit Cost</th><th>Count</th><th>Cost</th>
-				</tr>
-				<tr>
-					<td>item1</td><td>$?</td><td>?</td><td>$?</td>
-				</tr>
-				<tr>
-					<td>item2</td><td>$?</td><td>?</td><td>$?</td>
-				</tr>		
-				<tr>
-					<td>item3</td><td>$?</td><td>?</td><td>$?</td>
-				</tr>
-			</table>
-			<div class="address">
-				<p>Please set an address for pickup and delivery:</p>
-				<div class="selections">
-				<form name="frm">
-					<span class="area"><b>Area:</b>&nbsp;
-						<select name="s1" onChange="redirec(document.frm.s1.options.selectedIndex)">
-							<option selected>Select an area</option>
-							<option value="1">Wenxing Plaza</option>
-							<option value="2">Wenhui Plaza</option>
-							<option value="3">Wencui Plaza</option>
-						</select>
-					</span>
-					<span class="building"><b>Building:</b>&nbsp;
-						<select name="s2">
-							<option selected>Select a building</option>
-						</select>
-					</span>
-				</form>
-				</div>
-				<div class="room"><b>Room:</b>&nbsp;<input class="input"name="room" type="text" placeholder="Enter Room No." required="required" /></div>
-			</div>
-			<div class="phone_no"><b>Phone Number:</b>&nbsp;<input class="input" name="phone_no" type="text" placeholder="Enter Phone No." required="required"/>
-			</div>
-			<div class="window_bottom">
-				<span class="bottom_span" id="total_count">Total Count:</span>
-				<span id="total_count_no">?</span>
-				<span class="bottom_span" id="total_cost">Total Cost:</span>
-				<span id="total_cost_no">$?</span>
-				<span class="window_button_return" id="return"><button onclick='document.getElementById("confirm_window_visible").style.display="none";document.getElementById("cart_visible").style.display="block"'>Return</button></span>
-				<span class="window_button_confirm" id="confirm"><a href="customer_order_details.html"><button>Confirm</button></a></span>
-			</div>
-		</div>
-		
-		<script language="javascript">
-//获取一级菜单长度
-var select1_len = document.frm.s1.options.length;
-var select2 = new Array(select1_len);
-//把一级菜单都设为数组
-for (i=0; i<select1_len; i++)
-{ select2[i] = new Array();}
-//定义基本选项
-select2[0][0] = new Option("Select a building", " ");
-
-select2[1][0] = new Option("A01", " ");
-select2[1][1] = new Option("A02", " ");
-select2[1][2] = new Option("A03", " ");
-select2[1][3] = new Option("A04", " ");
-select2[1][4] = new Option("A05", " ");
-select2[1][5] = new Option("MBA", " ");
-
-select2[2][0] = new Option("Building 1", " ");
-select2[2][1] = new Option("Building 2", " ");
-select2[2][2] = new Option("Building 3", " ");
-select2[2][3] = new Option("Building 4", " ");
-select2[2][4] = new Option("Building 5", " ");
-select2[2][5] = new Option("Building 6", " ");
-
-select2[3][0] = new Option("Building 1", " ");
-select2[3][1] = new Option("Building 2", " ");
-select2[3][2] = new Option("Building 3", " ");
-select2[3][3] = new Option("Building 4", " ");
-select2[3][4] = new Option("Building 5", " ");
-select2[3][5] = new Option("Building 6A", " ");
-select2[3][6] = new Option("Building 6B", " ");
-select2[3][7] = new Option("Building 7A", " ");
-select2[3][8] = new Option("Building 7B", " ");
-
-//联动函数
-function redirec(x)
-{
-var temp = document.frm.s2;
-for (i=0;i<select2[x].length;i++)
-{ temp.options[i]=new Option(select2[x][i].text,select2[x][i].value);}
-temp.options[0].selected=true;
-}
-</script>
-		
         
         <!--footer-->
         <div class="footer">
