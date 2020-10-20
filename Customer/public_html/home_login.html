@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>G07 Laundry Expert | Homepage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="homepage.css" />
+    </head>
+    <body>
+        <div class="navbar_container">
+            <div class="brand">
+                <a href="home.html"><img src="cloth/brand.jpg" alt="brand"/></a>
+            </div>            
+            <div class="user">
+                <ul>
+                    <li>
+                        <a>User</a>
+                        <div class="dropdown"><a>Log Off</a></div>
+                    </li>
+                </ul>                
+            </div>
+        </div>
+        <!--navigation bar-->
+        <div class="map"><a href="home.html">Home page</a></div>
+        <!--map-->
+        <center>
+        <!--html of slides, refer to: http://sc.chinaz.com/jiaoben/huandengpian.html-->
+        <section id="rt-showcase-surround">
+            <div id="rt-showcase" class="slider-container rt-overlay-dark">
+                <div class="rt-container slider-container">
+                    <div class="rt-grid-12 rt-alpha rt-omega">               
+                        <div class="csslider1 autoplay">
+                    <input name="cs_anchor1" autocomplete="off" id="cs_slide1_0" type="radio" class="cs_anchor slide" >
+                    <input name="cs_anchor1" autocomplete="off" id="cs_slide1_1" type="radio" class="cs_anchor slide" >
+                    <input name="cs_anchor1" autocomplete="off" id="cs_slide1_2" type="radio" class="cs_anchor slide" >
+                    <input name="cs_anchor1" autocomplete="off" id="cs_slide1_3" type="radio" class="cs_anchor slide" >
+                    <input name="cs_anchor1" autocomplete="off" id="cs_play1" type="radio" class="cs_anchor" checked>
+                    <input name="cs_anchor1" autocomplete="off" id="cs_pause1" type="radio" class="cs_anchor" >
+                    <ul>
+                        <div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;">
+                            <img src="slide/1.jpg" style="width:530px; height:310px;">
+                        </div>
+                        <li class="num0 img">
+                            <img src="slide/1.jpg"  style="width:530px; height:310px;" />
+                        </li>
+                        <li class="num1 img">
+                            <img src="slide/2.jpg"  style="width:530px; height:310px;" />
+                        </li>
+                        <li class="num2 img">
+                            <img src="slide/3.jpg"  style="width:530px; height:310px;" />
+                        </li>
+                        <li class="num3 img">
+                            <img src="slide/4.jpg"  style="width:530px; height:310px;"/>
+                        </li>                    
+                    </ul>
+                    <div class="cs_description">
+                        <label class="num0">
+                            <span class="cs_title">
+                                <span class="cs_wrapper">Professional Laundry & Easy Delivery</span>
+                            </span>                            
+                        </label>
+                        <label class="num1">
+                            <span class="cs_title">
+                                <span class="cs_wrapper">Service in Wenxing, Wenhui & Wencui Square</span>
+                            </span>                            
+                        </label>
+                        <label class="num2">
+                            <span class="cs_title">
+                                <span class="cs_wrapper">Full Service Garment Care</span>
+                            </span>                            
+                        </label>
+                        <label class="num3">
+                            <span class="cs_title">
+                                <span class="cs_wrapper">Traceable and Steady</span>
+                            </span>                            
+                        </label>
+                    </div>                    
+                    <div class="cs_bullets">
+                        <label class="num0" for="cs_slide1_0">
+                            <span class="cs_point"></span>
+                        </label>
+                        <label class="num1" for="cs_slide1_1">
+                            <span class="cs_point"></span>
+                        </label>
+                        <label class="num2" for="cs_slide1_2">
+                            <span class="cs_point"></span>
+                        </label>
+                        <label class="num3" for="cs_slide1_3">
+                            <span class="cs_point"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        <div class="clear"></div>
+        </div>
+        <!--wash button-->
+        </div>
+            <a href="wash.html">
+                <button class="button" style="vertical-align:middle">
+                    <span>Wash</span>
+                </button>
+            </a>    
+        </section>
+        <!--"how it works" introduction-->
+        <div class="intro_container">
+            <div class="introduction">
+            <h1>How Laundry Expert Works?</h1>
+            <h2>move the mouse above icon to see details!</h2>
+            <div id="txtbox1">
+                <p id="txt1">Make An Order</p>
+                <span>
+                    Selecting laundry items and check the time, then our deliveryman will be on his way to meet you!
+                </span>
+            </div>
+            <canvas id="arrow1"></canvas>
+            <script>
+                var c=document.getElementById("arrow1");
+                var ctx=c.getContext("2d");
+                ctx.beginPath();
+                ctx.moveTo(60,0);
+                ctx.lineTo(100,40);
+                ctx.lineTo(60,80);
+                ctx.closePath();
+                ctx.fillStyle="#0099ff";
+                ctx.fill();
+                ctx.fillRect(0,20,60,40);
+            </script>
+            <div id="txtbox2">
+                <p id="txt2">Pick Up</p>
+                <span>
+                    Deliveryman will come to you and pick up your clothes. Your clothes are ready for traveling.
+                </span>
+            </div>
+            <canvas id="arrow2"></canvas>
+            <script>
+                var c=document.getElementById("arrow2");
+                var ctx=c.getContext("2d");
+                ctx.beginPath();
+                ctx.moveTo(60,0);
+                ctx.lineTo(100,40);
+                ctx.lineTo(60,80);
+                ctx.closePath();
+                ctx.fillStyle="#0099ff";
+                ctx.fill();
+                ctx.fillRect(0,20,60,40);
+            </script>
+            <div id="txtbox3">
+                <p id="txt3">Clean</p>
+                <span>
+                    The process of washing, drying, and packing will last within 2 days.
+                </span>
+            </div>
+            <canvas id="arrow3"></canvas>
+            <script>
+                var c=document.getElementById("arrow3");
+                var ctx=c.getContext("2d");
+                ctx.beginPath();
+                ctx.moveTo(60,0);
+                ctx.lineTo(100,40);
+                ctx.lineTo(60,80);
+                ctx.closePath();
+                ctx.fillStyle="#0099ff";
+                ctx.fill();
+                ctx.fillRect(0,20,60,40);
+            </script>
+            <div id="txtbox4">
+                <p id="txt4">Delivery</p>
+                <span>
+                    Just waiting when your clothes are on their way back. Confirming after receiving them and paying some bills to deliveryman!
+                </span>
+            </div>
+            </div>
+        </div>
+        <!--price list-->
+        <div class="price_list">
+            <div class="price_list_head">
+                <h1>What's the price?</h1>
+            </div>
+            <div class="price_list_left">
+                <div class="price_intro">
+                    <p>"We provide competitive and affordable price to full laundry services. For a specification of each clothing, please start to wash!"</p>
+                </div>            
+            </div>
+            <div class="price_list_right">
+                <div class="price_details">
+                    <table>
+                        <tr id="price_table_head">
+                            <th align="left">Clothing</th>
+                            <th align="right">Price/piece</th>
+                        </tr>
+                        <tr id="alt">
+                            <td align="left">Shirt</td>
+                            <td align="right">$10</td>
+                        </tr>
+                        <tr>
+                            <td align="left">T-shirt</td>
+                            <td align="right">$5</td>
+                        </tr>
+                        <tr id="alt">
+                            <td align="left">Jacket</td>
+                            <td align="right">$15</td>
+                        </tr>
+                        <tr>
+                            <td align="left">Coat</td>
+                            <td align="right">$15</td>
+                        </tr>
+                        <tr id="alt">
+                            <td align="left">Suit</td>
+                            <td align="right">$20</td>
+                        </tr>
+                        <tr>
+                            <td align="left">Sweater</td>
+                            <td align="right">$10</td>
+                        </tr>
+                        <tr id="alt">
+                            <td align="left">Jeans</td>
+                            <td align="right">$10</td>
+                        </tr>
+                        <tr>
+                            <td align="left">Skirt</td>
+                            <td align="right">$10</td>
+                        </tr>
+                        <tr id="alt">
+                            <td align="left">Trousers</td>
+                            <td align="right">$10</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </center>
+    <a href="javascript:scroll(0,0)"><img id="timg" src="cloth/timg.jpg" alt="timg"/></a>
+    <!--footer-->
+    <div class="footer">
+            <hr>
+            <p>Posted by: Group 07<br>Contact us: 0512-0000000</p>
+    </div>
+    </body>
+</html>

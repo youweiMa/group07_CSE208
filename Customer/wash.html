@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>G07 Laundry Expert | Wash</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="customer.css">
+    </head>
+    <body>
+        <div class="navbar_container">
+            <div class="brand">
+                <a href="home.html"><img src="cloth/brand.jpg" alt="brand"/></a>
+            </div>            
+            <div class="navbar">            
+                <ul>
+                    <li><a href="wash.html">Wash</a></li>                    
+                    <li><a href="myorders.html">My Orders</a></li>
+                    <li><a href="comments.html">Comments</a></li>                                                    
+                </ul>
+            </div>
+            <div class="user">
+                <ul>
+                    <li><a href="signin.html">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--navigation bar-->        
+        <div class="map"><a href="home.html">Home page</a>&gt <a href="wash.html">Wash</a></div>
+        <!--map-->
+        <div class="cloth_container">
+            <p class="title">Choose Clothes To Wash</p>
+            <center>
+        <!--choosing clothing table-->
+                <div class="cloth">   
+        <table class="cloth_table" cellspacing="50">
+            <tr>
+                <td>
+                    <table class="cloth_icon">
+                        <tr>
+                            <th colspan="2">
+                                <div class="cloth_img_1">
+                                <div class="transbox">
+                                    <p>Various kinds of shirts, including leisure and business shirts</p>
+                                </div>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr><td id="cloth_name">Shirt</td><td>Price: $10</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="cloth_icon">
+                        <tr>
+                            <th colspan="2">
+                                <div class="cloth_img_2">
+                                    <div class="transbox">
+                                        <p>All kinds of T-shirt are accepted</p>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr><td id="cloth_name">T-shirt</td><td>Price: $5</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="cloth_icon">
+                        <tr>
+                            <th colspan="2">
+                                <div class="cloth_img_3">
+                                    <div class="transbox">
+                                        <p>All kinds of jackets except suit jacket and down jackets</p>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr><td id="cloth_name">Jacket</td><td>Price: $15</td></tr>
+                    </table>                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="cloth_icon">
+                        <tr>
+                            <th colspan="2">
+                                <div class="cloth_img_4">
+                                    <div class="transbox">
+                                        <p>All kinds of coats despite the length and material</p>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr><td id="cloth_name">Coat</td><td>Price: $15</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="cloth_icon">
+                        <tr>
+                            <th colspan="2">
+                                <div class="cloth_img_5">
+                                    <div class="transbox">
+                                        <p>Suit jacket and suit pants</p>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr><td id="cloth_name">Suit</td><td>Price: $20</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="cloth_icon">
+                        <tr>
+                            <th colspan="2">
+                                <div class="cloth_img_6">
+                                    <div class="transbox">
+                                        <p>Various kinds of sweaters, wool and cashmere included</p>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr><td id="cloth_name">Sweater</td><td>Price: $10</td></tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="cloth_icon">
+                        <tr>
+                            <th colspan="2">
+                                <div class="cloth_img_7">
+                                    <div class="transbox">
+                                        <p>Long and short jeans</p>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr><td id="cloth_name">Jeans</td><td>Price: $10</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="cloth_icon">
+                        <tr>
+                            <th colspan="2">
+                                <div class="cloth_img_8">
+                                    <div class="transbox">
+                                        <p>All kinds despite the length and material are accepted</p>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr><td id="cloth_name">Skirt</td><td>Price: $10</td></tr>
+                    </table>
+                </td>
+                <td>
+                    <table class="cloth_icon">
+                        <tr>
+                            <th colspan="2">
+                                <div class="cloth_img_9">
+                                    <div class="transbox">
+                                        <p>Both long and short trousers are accepted</p>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr><td id="cloth_name">Trousers</td><td>Price: $10</td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        </div>
+            </center>
+        </div>
+        
+        <!--shopping cart-->
+        <!--this js provides function of hidding the cart when clicking the cart icon-->
+        <script type="text/javascript">
+        function elementDisplay(object){
+        var obj=document.getElementById(object);
+	if(obj.style.visibility !=='hidden'){
+	obj.style.visibility='hidden';
+	}else{
+		obj.style.visibility='visible';
+            }
+        }
+        </script>
+        <div class="carticon" onclick="elementDisplay('cart_visible')">
+            <img src="cloth/cart.png" alt="cart"/>
+        </div>
+        <div class="cart" id="cart_visible">
+            <div class="cart_head">
+                <p>Checkout:</p>
+            </div>
+            <div class="cart_body">
+                <div class="cart_cloth_1">
+                    <div class="cart_cloth_name">Shirt</div>
+                    <div class="cart_cloth_num">2</div>
+                    <div class="cart_quantity_icon">-|+</div>
+                </div>
+                <div class="cart_cloth_2">
+                    <div class="cart_cloth_name">T-shirt</div>
+                    <div class="cart_cloth_num">2</div>
+                    <div class="cart_quantity_icon">-|+</div>
+                </div>
+                <div class="cart_cloth_3">
+                    <div class="cart_cloth_name">Jacket</div>
+                    <div class="cart_cloth_num">1</div>
+                    <div class="cart_quantity_icon">-|+</div>
+                </div>
+            </div>
+            <div class="cart_foot">
+                <p>Total $: 45</p>
+                <button class="cart_button" style="vertical-align:middle">
+                    <span>Confirm</span>
+                </button> 
+            </div>
+        </div>
+        
+        <!--footer-->
+        <div class="footer">
+            <hr>
+            <p>Posted by: Group 07<br>Contact us: 0512-0000000</p>
+        </div>        
+    </body>
+</html>

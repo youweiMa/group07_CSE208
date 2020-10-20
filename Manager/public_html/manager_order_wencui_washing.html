@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>G07 Laundry Expert | Order Management</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="manager.css">
+    </head>
+    <body>
+	    <!--navigation bar-->  
+        <div class="navbar_container">
+            <div class="brand">
+                <img src="cloth/brand.jpg" alt="brand"/>
+            </div>            
+            <div class="navbar">            
+                <ul>                  
+                    <li><a href="manager_order_wenxing_new.html">Order Management</a></li>
+                    <li><a href="manager_comments.html">Comments</a></li>                                                    
+                </ul>
+            </div>
+            <div class="user">
+                <ul>
+                    <li><a href="m_home.html">Sign Out</a></li>
+                </ul>
+            </div>
+        </div>
+
+	<!--map-->
+        <div class="map">
+            <a href="manager_order_wenxing_new.html">Order Management</a>
+	</div>
+				
+	<!--Show orders-->
+	<div class="manager_order_bigcontainer">
+        <!--Chose An Area-->
+            <div class="areas">
+                <a href="manager_order_wenxing_washing.html">Wenxing </a>
+                <a href="manager_order_wenhui_washing.html">Wenhui </a>
+                <a class="areas selected" href="manager_order_wencui_washing.html">Wencui</a>
+            </div>
+            <div class="manager_order_bigtable">
+                <table>
+		<tr>
+                    <td class="manager_order_bigtable_lefttd">
+                    <h2>Orders</h2>
+                    <ul>
+			<li><a class="status" href="manager_order_wencui_new.html">New</a></li>
+			<li><a class="status" href="manager_order_wencui_pickingup.html">Picking Up</a></li>
+			<li><a class="status selected" href="manager_order_wencui_washing.html">Washing</a></li>
+			<li><a class="status" href="manager_order_wencui_indelivery.html">In Delivery</a></li>
+			<li><a class="status" href="manager_order_wencui_finished.html">Finished Orders</a></li>
+                    </ul>
+                    </td>
+                    <td class="manager_order_bigtable_righttd">
+                        
+			<table class="manager_order_smalltable">
+                            <thead>
+				<tr>
+                                    <td>No.</td>
+                                    <td>Order ID</td>
+                                    <td>Order Date</td>
+                                    <td>Items</td>
+                                    <td>Cost</td>
+                                    <td>Order Status</td>
+                                    <td>Operation</td>
+				</tr>
+                            </thead>
+                            <tbody>
+				<tr>
+                                    <td>编号</td>
+                                    <td>订单ID</td>
+                                    <td>下单时间</td>
+                                    <td>数量</td>
+                                    <td>订单价格</td>
+                                    <td>订单状态</td>
+                                    <td><button>Update Status</button></td>
+				</tr>
+                            </tbody>
+			</table>
+                    </td>
+		</tr>
+                </table>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="footer">
+            <hr>
+            <p>Posted by: Group 07<br>Contact us: 0512-0000000</p>
+        </div>
+    </body>
+</html>

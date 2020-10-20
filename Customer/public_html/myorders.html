@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>G07 Laundry Expert | My Orders</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="customer.css">
+    </head>
+    <body>
+        <!--navigation bar--> 
+        <div class="navbar_container">
+            <div class="brand">
+                <a href="home.html"><img src="cloth/brand.jpg" alt="brand"/></a>
+            </div>            
+            <div class="navbar">            
+                <ul>
+                    <li><a href="wash.html">Wash</a></li>                    
+                    <li><a href="myorders.html">My Orders</a></li>
+                    <li><a href="comments.html">Comments</a></li>                                                    
+                </ul>
+            </div>
+            <div class="user">
+                <ul>
+                    <li><a href="signin.html">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--map-->      
+        <div class="map"><a href="home.html">Home page</a>&gt <a href="myorders.html">My Orders</a></div>
+        <!--orders table-->
+        <div class="ordertable_container">
+            <p class="title">Order Lists</p>
+            <div class="ordertable">
+		<div class="ordertable_left">
+			<p>Current Orders</p>
+                        <a class="button" href="myorders_history.html">Past Orders</a>
+		</div>
+		<div class="ordertable_right">
+			<h3>Review and manage your recent orders.</h3>
+			<hr/>
+			<table class="order_list">
+                            <thead>	
+                                <tr>
+                                    <th>Order Number</th>
+                                    <th>Order Date</th>
+                                    <th>Items</th>
+                                    <th>Price</th>
+                                    <th>Status</th>
+                                    <th>Operation</th>
+            			</tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="6">(You currently have no outstanding orders.)</td>
+                                </tr>
+                            </tbody>
+			</table>
+		</div>
+            </div>
+        </div>
+        <!--footer-->
+    <div class="footer">
+            <hr>
+            <p>Posted by: Group 07<br>Contact us: 0512-0000000</p>
+    </div>
+    </body>
+</html>
